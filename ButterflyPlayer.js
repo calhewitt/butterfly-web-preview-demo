@@ -37,11 +37,11 @@ function placePainting() {
 }
 
 $(window).on("load", function() {
-    $("#painting").css({'background-image': 'url(' + project['artwork-id'] +  ')'})
+    $("#painting").css({'background-image': 'url(/media/artworks/' + project['artwork-id'] +  ')'})
     placePainting()
     project.sounds.forEach(function(sound) {
       var sobj = new Howl({
-        src: [sound['sound-id']],
+        src: ["/media/sounds/" + sound['sound-id']],
         loop: true
       })
       sobj.once('load', function(){
@@ -70,7 +70,7 @@ $("#painting").on("mousemove", function(e) {
   for (i = 0; i < numSounds; i++) {
       var dx = x - soundPositions[i][0]
       var dy = (y - soundPositions[i][1]) * aspectRatio
-      var dist = Math.sqrt(dx**2 + dy**2)
+      var dist = Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2))
       var volume = 1 - (dist/RADIUS)
       if (volume < 0) {
         volume = 0
