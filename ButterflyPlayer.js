@@ -69,7 +69,7 @@ $("#painting").on("mousemove", function(e) {
 
   for (i = 0; i < numSounds; i++) {
       var dx = x - soundPositions[i][0]
-      var dy = (y - soundPositions[i][1]) * aspectRatio
+      var dy = (y - soundPositions[i][1]) / aspectRatio
       var dist = Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2))
       var volume = 1 - (dist/RADIUS)
       if (volume < 0) {
