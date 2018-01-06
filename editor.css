@@ -1,0 +1,274 @@
+body, input, select {
+    font-family: "Roboto Mono";
+}
+
+body {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+    cursor: default;
+}
+
+#logoetc {
+  width: 100%;
+  height: 140px;
+}
+
+
+#icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  margin: 10px;
+  float: left;
+  background-image: url(/static/logo.jpg);
+  background-size: cover;
+}
+
+#logotext {
+  line-height: 80px; float: left; margin-top: 10px;
+  font-size: 18px;
+}
+
+#return-link {
+  font-size: 12px;
+  position: absolute;
+  left: 100px;
+  top: 65px;
+
+}
+
+#return-link a {
+  color: black;
+}
+#return-link a:hover {
+  color: #191970;
+}
+
+#right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 100%;
+  background:white;
+}
+
+#topright {
+  width: 100%;
+  height: 300px;
+
+}
+
+#left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 400px;
+  background: #000;
+  height: 100%;
+}
+#painting {
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+}
+.marker {
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  background: #333333;
+  border: 5px solid green;
+  border-radius: 50px;
+  position: absolute;
+  cursor: move;
+  transition: 0.1s;
+}
+.active {
+border-color: red;
+}
+
+
+#project-title {
+  font-size: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: calc(100% - 170px);
+  float: left;
+  height: 30px;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  border-bottom: 1px dashed grey;
+}
+
+#save-button {
+  width: 50px;
+  height: 50px;
+  float: left;
+  cursor: default;
+  color: #aaa;
+  line-height: 50px;
+  text-align: center;
+}
+#preview-button {
+  width: 50px;
+  height: 50px;
+  float: left;
+  cursor: pointer;
+  line-height: 50px;
+  text-align: center;
+}
+
+#delete-button {
+  width: 50px;
+  height: 50px;
+  float: left;
+  cursor: pointer;
+  color: black;
+  line-height: 50px;
+  text-align: center;
+}
+
+.section-title {
+  width: 100%;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+#sound-library {
+  width: 100%;
+  height: calc(100% - 300px);
+  border-top: 2px solid black;
+}
+
+#add-to-library, #create-marker {
+  float:right;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sound {
+  width: 100%;
+  height: 50px;
+}
+
+#sl-title {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid grey;
+}
+#sl-title span {
+  font-size: 25px;
+  line-height: 50px;
+  margin-left: 10px;
+}
+
+#ms-title {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid grey;
+}
+#ms-title span {
+  font-size: 25px;
+  line-height: 50px;
+  margin-left: 10px;
+}
+
+#sound-list {
+  height: calc(100% - 50px);
+  overflow-y: scroll;
+}
+
+.sound-name {
+  width: calc(100% - 120px);
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 50px;
+  float: left;
+}
+
+.colour-marker{
+  width: 30px;
+  height: 50px;
+  float: left;
+}
+
+.delete-sound {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  float:left;
+  line-height: 50px !important;
+  text-align: center;
+}
+
+.preview-sound {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  float:left;
+  line-height: 50px !important;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+#marker-section {
+  border-top: 2px solid black;
+  height: 100px;
+  position: absolute;
+  top: 200px;
+  width: 100%;
+}
+
+#marker-properties {
+  background-color: white;
+}
+
+#marker-properties select {
+  width: calc(100% - 150px);
+  float:left;
+  height: 29px;
+  margin-top: 9px;
+  background-color: #ccc;
+  outline: none;
+  border: none;
+}
+#ms-placeholder {
+  line-height: 47px;
+  text-align: center;
+  color: grey;
+}
+
+#delete-marker {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  float:left;
+  line-height: 50px;
+  text-align: center;
+}
+
+#mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: none;
+  color: white;
+}

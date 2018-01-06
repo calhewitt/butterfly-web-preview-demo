@@ -1,0 +1,32 @@
+#left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #000;
+  height: 100%;
+}
+#circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 3px solid red;
+
+}
+#painting {
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  cursor: none;
+  
+}
+.marker {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-left: -15px;
+  margin-top: -15px;
+  background-color: green;
+  border-radius: 15px;
+}

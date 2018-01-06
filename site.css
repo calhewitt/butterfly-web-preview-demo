@@ -1,0 +1,235 @@
+body, input, select {
+    font-family: "Roboto Mono";
+}
+
+body {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+      cursor: default;
+}
+
+a {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1px dashed black;
+  padding-bottom: 2px;
+}
+a:hover {
+  color: #191970;
+  border-color: #191970;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+#container {
+  width: 800px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#header {
+  width: 100%;
+  height: 100px;
+  margin-top: 50px;
+}
+
+
+#logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  margin-right: 10px;
+  float: left;
+  background-image: url(/static/logo.jpg);
+  background-size: cover;
+}
+
+#logotext {
+  line-height: 80px; float: left;
+  font-size: 18px;
+}
+
+#login-info {
+  float:right;
+  width: 300px;
+  line-height: 80px;
+}
+
+#projects{
+  margin-left: 20px;
+}
+
+.project {
+  width: 338px;
+  margin: 10px;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+.project:hover {
+  background: black;
+  color: white;
+}
+.project-thumb {
+  width: 300px;
+  margin: 19px;
+}
+.project-title {
+  width: 100%;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+#admin-link {
+  text-align: center;
+  color: green;
+  margin-bottom: 30px;
+}
+
+#artworks{
+  margin-left: 20px;
+}
+
+.artwork {
+  width: 338px;
+  margin: 10px;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+.artwork:hover {
+  background: black;
+  color: white;
+}
+.artwork-thumb {
+  width: 300px;
+  margin: 19px;
+}
+.artwork-title {
+  width: 100%;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.artwork-artist {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+.artwork-gallery {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+
+#mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.7;
+  display: none;
+}
+
+#choose-title{
+  width: 800px;
+  height: 200px;
+  background: white;
+  margin-left: -400px;
+  margin-top: -100px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: none;
+}
+
+#choose-title div {
+  margin-left:10px;
+  margin-top: 30px;
+  font-size: 24px;
+}
+
+#choose-title input {
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100% - 20px);
+    float: left;
+    height: 30px;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    border-bottom: 1px dashed grey;
+
+}
+
+#login input {
+  font-size: 18px;
+  width: 100%;
+  height: 30px;
+  margin-top: 30px;
+  outline: none;
+  border: none;
+  border-bottom: 1px dashed grey;
+}
+#loginsub {
+  border: 1px solid grey !important;
+  width: 100px !important;
+  float: right !important;
+  cursor: pointer;
+  background: #ddd;
+  margin-bottom: 50px;
+}
+#loginsub:hover {
+  background: #aaa;
+}
+#loginsub:focus {
+  border: 1px solid black !important;
+}
+
+#login label {
+  font-size: 20px;
+}
+
+#login .helptext {
+  display: block;
+  margin-top: 20px;
+  color: #555;
+}
+
+#login li {
+  color: red;
+}
+
+#noprojects {
+  text-align: center;
+  color: #333;
+}
+
+#createsub {
+  border: 1px solid grey !important;
+  width: 200px !important;
+  float: right !important;
+  cursor: pointer;
+  background: #ddd;
+}
+
+#signmeup {
+  text-align: center;
+  margin-top: 100px;
+}
