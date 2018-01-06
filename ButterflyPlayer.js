@@ -37,11 +37,11 @@ function placePainting() {
 }
 
 $(window).on("load", function() {
-    $("#painting").css({'background-image': 'url(/media/artworks/' + project['artwork-id'] +  ')'})
+    $("#painting").css({'background-image': 'url(' + project['artwork-id'] +  ')'})
     placePainting()
     project.sounds.forEach(function(sound) {
       var sobj = new Howl({
-        src: ["/media/sounds/" + sound['sound-id']],
+        src: [sound['sound-id']],
         loop: true
       })
       sobj.once('load', function(){
